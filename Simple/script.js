@@ -8,7 +8,6 @@ function calcular(){
         alert("Digite números válidos");
         return;
     }
-
     res.innerHTML = n1 + n2;
 }
 
@@ -27,4 +26,21 @@ function media(){
     mediaTexto.style.color = "red"
    }
    
+}
+
+function contar(){
+    const num = parseInt($("#numeroInput").val());
+    if(isNaN(num)){
+        $("#result").text("Por favor, informe um número válido");
+        return;
+    }
+    var resultadoStr = ""
+    if(num <= 10000){
+        for(var cont = 1; cont <= num; cont++){
+            resultadoStr = resultadoStr + cont + "<br>";
+        }
+        $("#result").html(resultadoStr)
+    }else{
+        $("#result").text("Vai travar se você digitar este número");
+    }
 }

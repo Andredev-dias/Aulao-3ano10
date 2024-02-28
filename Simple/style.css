@@ -11,8 +11,9 @@ body{
     gap: 4vh;
     padding: 20px;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 h1{
@@ -28,6 +29,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 2vh;  
+    height: auto;
 }
 
 section{
@@ -40,6 +42,7 @@ section{
     color: #ffff;
     padding: 20px;
     border-radius: 10px;
+    height: auto;
 }
 
 input{
@@ -65,5 +68,9 @@ input{
 .btn1:hover{
     cursor: pointer;
     opacity: 1;
+}
+
+.style-label{
+    color: red;
 }
 
